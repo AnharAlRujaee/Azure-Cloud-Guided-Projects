@@ -1,0 +1,132 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>CloudSpace | Azure Demo</title>
+<style>
+* { box-sizing: border-box; }
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  color: #202344;
+  background: #f8f7ff;
+}
+nav {
+  padding: 22px 9%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: white;
+}
+.logo { font-size: 23px; font-weight: bold; color: #7055df; }
+nav a { margin-left: 25px; text-decoration: none; color: #555; }
+.hero {
+  min-height: 480px;
+  padding: 100px 10%;
+  background: linear-gradient(120deg,#e9e5ff,#f8f7ff);
+}
+.hero h1 { font-size: 52px; margin-bottom: 15px; }
+.hero h1 span { color: #7055df; }
+.hero p { font-size: 18px; line-height: 1.8; max-width: 570px; color: #666; }
+.button {
+  display: inline-block;
+  margin-top: 20px;
+  padding: 14px 25px;
+  background: #7055df;
+  color: white;
+  border-radius: 8px;
+  text-decoration: none;
+}
+section { padding: 65px 10%; }
+h2 { font-size: 32px; }
+.cards {
+  display: grid;
+  grid-template-columns: repeat(3,1fr);
+  gap: 22px;
+  margin-top: 30px;
+}
+.card {
+  background: white;
+  padding: 28px;
+  border-radius: 13px;
+  box-shadow: 0 5px 20px #25204a10;
+}
+.card h3 { color: #7055df; }
+.card p { color: #666; line-height: 1.7; }
+.about { background: white; }
+footer {
+  padding: 25px;
+  text-align: center;
+  background: #24213f;
+  color: white;
+}
+@media(max-width:700px) {
+  .hero h1 { font-size: 37px; }
+  .cards { grid-template-columns: 1fr; }
+  nav { padding: 18px 5%; }
+  nav a { margin-left: 10px; font-size: 13px; }
+}
+</style>
+</head>
+<body>
+
+<nav>
+  <div class="logo">CloudSpace ☁</div>
+  <div>
+    <a href="#home">Home</a>
+    <a href="#features">Features</a>
+    <a href="#about">About</a>
+  </div>
+</nav>
+
+<main>
+<section class="hero" id="home">
+  <h1>Welcome to the <span>Cloud.</span></h1>
+  <p>
+    Discover the possibilities of cloud computing.
+    This demonstration website is hosted using
+    Microsoft Azure Blob Storage static website hosting.
+  </p>
+  <a href="#features" class="button">Explore the Website →</a>
+</section>
+
+<section id="features">
+  <h2>Why Cloud Computing?</h2>
+  <p>Technology that makes digital experiences simpler and more accessible.</p>
+  <div class="cards">
+    <div class="card">
+      <h3>☁ Cloud Hosting</h3>
+      <p>Host website content using Microsoft Azure cloud infrastructure.</p>
+    </div>
+    <div class="card">
+      <h3>⚡ Performance</h3>
+      <p>Deliver static website files efficiently without managing a web server.</p>
+    </div>
+    <div class="card">
+      <h3>🔒 Reliability</h3>
+      <p>Use cloud storage services to store and publish website content.</p>
+    </div>
+  </div>
+</section>
+
+<section class="about" id="about">
+  <h2>About This Project</h2>
+  <p>
+    This website was created as part of an Azure Cloud learning project.
+    It demonstrates HTML, CSS, responsive design, and static website
+    hosting through Azure Blob Storage.
+  </p>
+  <p><strong>Cloud Platform:</strong> Microsoft Azure</p>
+  <p><strong>Service:</strong> Azure Blob Storage</p>
+  <p><strong>Website Type:</strong> Static Website</p>
+</section>
+</main>
+
+<footer>
+  <p>© 2026 CloudSpace | Azure Static Website Project</p>
+</footer>
+
+</body>
+</html>
