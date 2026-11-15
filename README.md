@@ -1,4 +1,4 @@
-# Azure Cloud Week 2 — Guided Projects
+# Azure Cloud — Guided Projects
 
 **Practical Azure portfolio | November 2026**
 
